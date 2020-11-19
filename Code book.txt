@@ -1,0 +1,64 @@
+Code Book
+
+This code book summarizes the resulting data fields in "tidy_dataset.txt"
+
+Identifiers
+
+    Subject - The ID of the participants 
+    Activity - The type of activity performed 
+
+Measurements - The corresponding measurements were taken while subjects 
+were performing a defined activity.  From the original documentation, 
+"Triaxial acceleration from the accelerometer (total acceleration) 
+and the estimated body acceleration. Triaxial Angular velocity from 
+the gyroscope." 
+                  
+ [3] "tBodyAccMeanX"                "tBodyAccMeanY"               
+ [5] "tBodyAccMeanZ"                "tBodyAccStdX"                
+ [7] "tBodyAccStdY"                 "tBodyAccStdZ"                
+ [9] "tGravityAccMeanX"             "tGravityAccMeanY"            
+[11] "tGravityAccMeanZ"             "tGravityAccStdX"             
+[13] "tGravityAccStdY"              "tGravityAccStdZ"             
+[15] "tBodyAccJerkMeanX"            "tBodyAccJerkMeanY"           
+[17] "tBodyAccJerkMeanZ"            "tBodyAccJerkStdX"            
+[19] "tBodyAccJerkStdY"             "tBodyAccJerkStdZ"            
+[21] "tBodyGyroMeanX"               "tBodyGyroMeanY"              
+[23] "tBodyGyroMeanZ"               "tBodyGyroStdX"               
+[25] "tBodyGyroStdY"                "tBodyGyroStdZ"               
+[27] "tBodyGyroJerkMeanX"           "tBodyGyroJerkMeanY"          
+[29] "tBodyGyroJerkMeanZ"           "tBodyGyroJerkStdX"           
+[31] "tBodyGyroJerkStdY"            "tBodyGyroJerkStdZ"           
+[33] "tBodyAccMagMean"              "tBodyAccMagStd"              
+[35] "tGravityAccMagMean"           "tGravityAccMagStd"           
+[37] "tBodyAccJerkMagMean"          "tBodyAccJerkMagStd"          
+[39] "tBodyGyroMagMean"             "tBodyGyroMagStd"             
+[41] "tBodyGyroJerkMagMean"         "tBodyGyroJerkMagStd"         
+[43] "fBodyAccMeanX"                "fBodyAccMeanY"               
+[45] "fBodyAccMeanZ"                "fBodyAccStdX"                
+[47] "fBodyAccStdY"                 "fBodyAccStdZ"                
+[49] "fBodyAccMeanFreqX"            "fBodyAccMeanFreqY"           
+[51] "fBodyAccMeanFreqZ"            "fBodyAccJerkMeanX"           
+[53] "fBodyAccJerkMeanY"            "fBodyAccJerkMeanZ"           
+[55] "fBodyAccJerkStdX"             "fBodyAccJerkStdY"            
+[57] "fBodyAccJerkStdZ"             "fBodyAccJerkMeanFreqX"       
+[59] "fBodyAccJerkMeanFreqY"        "fBodyAccJerkMeanFreqZ"       
+[61] "fBodyGyroMeanX"               "fBodyGyroMeanY"              
+[63] "fBodyGyroMeanZ"               "fBodyGyroStdX"               
+[65] "fBodyGyroStdY"                "fBodyGyroStdZ"               
+[67] "fBodyGyroMeanFreqX"           "fBodyGyroMeanFreqY"          
+[69] "fBodyGyroMeanFreqZ"           "fBodyAccMagMean"             
+[71] "fBodyAccMagStd"               "fBodyAccMagMeanFreq"         
+[73] "fBodyBodyAccJerkMagMean"      "fBodyBodyAccJerkMagStd"      
+[75] "fBodyBodyAccJerkMagMeanFreq"  "fBodyBodyGyroMagMean"        
+[77] "fBodyBodyGyroMagStd"          "fBodyBodyGyroMagMeanFreq"    
+[79] "fBodyBodyGyroJerkMagMean"     "fBodyBodyGyroJerkMagStd"     
+[81] "fBodyBodyGyroJerkMagMeanFreq"
+
+Activity Labels
+
+    WALKING (level 1): subject was walking during the test
+    WALKING_UPSTAIRS (level 2): subject was walking up a staircase during the test
+    WALKING_DOWNSTAIRS (level 3): subject was walking down a staircase during the test
+    SITTING (level 4): subject was sitting during the test
+    STANDING (level 5): subject was standing during the test
+    LAYING (level 6): subject was laying down during the test
