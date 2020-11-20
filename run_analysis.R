@@ -1,6 +1,6 @@
 
 ### Getting and Cleaning data Course Project
-### Nov 19, 2020
+### Nov 20, 2020
 
 # 1. Merges the training and the test sets to create one data set.
 # 2. Extracts only the measurements on the mean and standard deviation for each measurement.
@@ -8,8 +8,6 @@
 # 4. Appropriately labels the data set with descriptive variable names.
 # 5. From the data set in step 4, creates a second, independent tidy data 
 #    set with the average of each variable for each activity and each subject.
-
-setwd("C:/Users/jessica.lundin/Desktop/Personal/COURSERA/Getting and Cleaning data/")
 
 filename <- "getdata_dataset.zip"
 
@@ -21,7 +19,6 @@ if (!file.exists(filename)){
 if (!file.exists("UCI HAR Dataset")) { 
   unzip(filename) 
 }
-
 
 # 1. Merges the training and the test sets to create one data set.
 # read train, test, and subject csv files and merge datasets 
@@ -66,6 +63,7 @@ allData <- cbind(s_data, y_data, x_data)
 # 4. Appropriately labels the data set with descriptive variable names.
 colnames(allData) <- c("Subject", "Activity", selectedColNames)
 
+
 # Load activity labels
 a_label <- read.table("UCI HAR Dataset/activity_labels.txt")
 a_label[,2] <- as.character(a_label[,2])
@@ -81,6 +79,6 @@ library(reshape2)
 meltedData <- melt(allData, id = c("Subject", "Activity"))
 tidyData <- dcast(meltedData, Subject + Activity ~ variable, mean)
 write.table(tidyData, "./tidy_dataset.txt", row.names = FALSE, quote = FALSE)
+View(tidyData)
 
-read.table("C:/Users/jessica.lundin/Desktop/Personal/COURSERA/Getting and Cleaning data/tidy_dataset.txt",
-           header=T)
+#read.table("C:/Users/jessica.lundin/Desktop/Personal/COURSERA/Getting and Cleaning data/tidy_dataset.txt",header=T)
